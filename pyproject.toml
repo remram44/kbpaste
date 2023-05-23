@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kbpaste"
+version = "0.1.0"
+description = ""
+authors = ["Remi Rampin <remi@rampin.org>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+pyautogui = "^0.9.53"
+pyperclip = "^1.8.2"
+
+[tool.poetry.scripts]
+kbpaste = "kbpaste:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
