@@ -11,6 +11,11 @@ def write(message, interval=0.0):
     for c in message:
         upper = c.isupper()
         c = c.lower()
+
+        if c == '<':
+            upper = True
+            c = ','
+
         if upper and not last_upper:
             pyautogui.keyDown('shift')
             sleep(interval)
