@@ -34,5 +34,5 @@ def main():
     text = pyperclip.paste()
     print("Waiting {0} seconds and pasting {1} characters...".format(DELAY, len(text)))
     sleep(DELAY)
-    write(text, interval=0.1)
+    write(text, interval=0.01)
     print("Done.")
