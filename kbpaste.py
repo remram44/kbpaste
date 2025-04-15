@@ -28,6 +28,8 @@ def write(message, interval=0.0):
         sleep(interval)
         pyautogui.keyUp(c)
         sleep(interval)
+    if last_upper:
+        pyautogui.keyUp('shift')
 
 
 def main():
